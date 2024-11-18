@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Aba lateral -->
+        <aside class="sidebar">
+            <h2>Pedidos Finalizados</h2>
+            <ul>
+                <li>Pedido 1 - Carne seca</li>
+                <li>Pedido 2 - Frango com requeijão</li>
+                <li>Pedido 3 - Calabresa</li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <h1>Pedidos Atuais</h1>
+            <div class="carousel">
+                <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+                <div class="carousel-container">
+                    <!-- Pedido 1 -->
+                    <div class="card">
+                        <div class="header">pizza grande</div>
+                        <div class="content">
+                            <p>Carne seca sem cebola</p>
+                            <p>4 queijo</p>
+                            <p>Calabresa</p>
+                            <p>Frango com requeijão</p>
+                        </div>
+                    </div>
+                    <!-- Pedido 2 -->
+                    <div class="card">
+                        <div class="header">pizza grande</div>
+                        <div class="content">
+                            <p>Carne seca sem cebola</p>
+                            <p>4 queijo</p>
+                            <p>Calabresa</p>
+                            <p>Frango com requeijão</p>
+                            <p class="obs">Obs: sem cebola</p>
+                        </div>
+                    </div>
+                    <!-- Pedido 3 -->
+                    <div class="card">
+                        <div class="header">pizza grande</div>
+                        <div class="content">
+                            <p>Carne seca sem cebola</p>
+                            <p>4 queijo</p>
+                            <p>Calabresa</p>
+                            <p>Frango com requeijão</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
